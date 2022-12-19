@@ -1,0 +1,798 @@
+@font-face {
+  font-family: "lato";
+  src: url(../font/Lato-Regular.ttf);
+}
+* {
+  color: grey;
+}
+* {
+  box-sizing: border-box;
+}
+:root {
+  --color-one: #999999;
+  --color-two: #575757;
+  --color-three: #303030;
+  --color-four: #d3d1d1;
+  --color-five: #fff;
+  --color-six: #fff;
+}
+
+body {
+  margin: 0;
+}
+
+
+
+/* test */
+.main {
+  position: relative;
+  left: 20px;
+}
+
+.parent {
+  margin-left: 40px;
+}
+p {
+  position: static;
+  padding-left: 50px;
+}
+span {
+  position: absolute;
+  left: 50px;
+}
+
+.parent {
+  margin-left: 40px;
+}
+p {
+  position: static;
+  padding-left: 50px;
+}
+span {
+  position: absolute;
+  left: 50px;
+}
+#menuHeader a {
+  text-decoration: none;
+}
+
+#menuHeader {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  position: relative;
+  z-index: 2;
+}
+
+#menuHeader li {
+  font-size: 1.5rem;
+  margin-left: 15px;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 1rem;
+}
+
+#menuHeader ul {
+  width: 100px;
+  list-style-type: none;
+  position: absolute;
+  border: none;
+  top: 60px;
+  background-color: rgba(red, green, blue, alpha);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+
+  width: 30vh;
+
+  max-height: 0;
+  /* overflow: hidden; */
+  transition: all 0.5s;
+}
+
+#brand {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 15px;
+  left: 10px;
+}
+
+#burger {
+  color: black;
+  font-size: 1rem;
+  position: absolute;
+  right: 0;
+
+  top: 15px;
+}
+#box:checked ~ ul {
+  max-height: 0;
+}
+#box {
+  display: none;
+}
+#box:not(:checked) ~ ul {
+  max-height: 0;
+}
+
+/* menu resp */
+
+/* header  */
+
+#header {
+  background-image: url(../img/parallax1.jpg);
+  display: flex;
+  justify-content: center;
+  height: 70vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  width: 100%;
+  border: none;
+  position: relative;
+}
+#header h1 {
+  background-color: black;
+  height: 7vh;
+  width: 27vh;
+  text-align: center;
+  padding: 1rem;
+  letter-spacing: 0.5rem;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  font-style: normal;
+}
+.myLogo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  letter-spacing: 0.5rem;
+}
+#about h2 {
+  padding-top: 5vh;
+  display: flex;
+  justify-content: center;
+}
+#about h3 {
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+}
+#about p {
+  padding: 0.7rem;
+  font-size: 1.1rem;
+}
+#name {
+  display: flex;
+  justify-content: center;
+}
+.photo img {
+  padding: 1rem;
+  width: 100%;
+}
+.text h3 {
+  display: flex;
+  justify-content: center;
+}
+
+/* bar skills */
+#barskills {
+  padding-left: 2rem;
+  height: 30vh;
+}
+
+#barskills h3 {
+  letter-spacing: 0.5rem;
+  font-size: 1rem;
+}
+#skills h3 {
+  padding-left: 2rem;
+}
+#skills p {
+  padding-left: 2rem;
+}
+#bar1 {
+  width: 90%;
+  height: 3vh;
+  background-color: #a0a2a5;
+  color: white;
+  text-align: center;
+}
+.bar12 {
+  background-color: #535555;
+  width: 0%;
+  color: white;
+  height: 3vh;
+  overflow: hidden;
+  transition: all 1s;
+}
+
+#bar2 {
+  width: 90%;
+  height: 3vh;
+  background-color: #a0a2a5;
+
+  color: white;
+  text-align: center;
+}
+.bar13 {
+  background-color: #535555;
+  width: 75%;
+  color: white;
+  height: 3vh;
+}
+#bar3 {
+  width: 90%;
+  height: 3vh;
+  background-color: #a0a2a5;
+
+  color: white;
+  text-align: center;
+}
+.bar14 {
+  background-color: #535555;
+  width: 65%;
+  color: white;
+  height: 3vh;
+}
+/* fin skill section */
+#middle {
+  background-color: #a0a2a5;
+  width: 100%;
+  height: 60vh;
+}
+
+#middle {
+  width: 100%;
+  /* background-color: grey; */
+  display: flex;
+  color: white;
+  height: 50vh;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40%;
+  font-size: 1.5rem;
+
+  text-align: center;
+}
+.partners {
+  padding-bottom: 2rem;
+  color: white;
+}
+.projects {
+  padding-bottom: 2rem;
+  color: white;
+}
+.happy {
+  padding-bottom: 2rem;
+  color: white;
+}
+.meetings {
+  color: white;
+}
+
+/* #middle h3 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+  }
+  #middle h4 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-style: normal;
+  } */
+/* middle-image paralax2 */
+.image {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  background-size: cover;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+}
+.portofolio {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  letter-spacing: 0.5rem;
+}
+
+/* pics section */
+#myWork h3 {
+  display: flex;
+  justify-content: center;
+}
+#myWork h4 {
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+}
+#pics img {
+  width: 100%;
+  vertical-align: bottom;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.load {
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+}
+.load button {
+  width: 15vh;
+  height: 6vh;
+  border: none;
+  color: black;
+}
+#here h4 {
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+}
+#here h3 {
+  display: flex;
+  justify-content: center;
+}
+
+#map img {
+  padding: 1rem;
+  height: 40vh;
+  width: 100%;
+  border-radius: 6%;
+}
+
+#contact {
+  background-color: white;
+}
+#contact h3 {
+  text-align: center;
+  padding-top: 10vh;
+  font-size: 2.2rem;
+}
+#contact h4 {
+  padding-left: 5rem;
+  font-size: 1.3rem;
+  color: black;
+}
+#contact h5 {
+  font-size: 1.2rem;
+  padding-left: 1rem;
+}
+#locate {
+  font-size: 2rem;
+  padding-right: 2.5rem;
+}
+
+/* contact form */
+
+#contact {
+  height: 60vh;
+  width: 100%;
+}
+
+.contact h4 {
+  width: 100%;
+  margin: 3%;
+}
+
+#contactForm {
+  width: 100%;
+  margin: 2%;
+  margin-bottom: 20%;
+  /* position: relative; */
+}
+#contactForm input {
+  width: 93%;
+  padding: 0.7rem;
+  margin: 0.5rem;
+  height: 3.5rem;
+  font-size: 1rem;
+  border-color: #f3f5f8;
+}
+#contactForm button {
+  width: 35%;
+  padding: 0.7rem;
+  margin: 0.5rem;
+  height: 3.5rem;
+  font-size: 1rem;
+  background-color: black;
+  color: white;
+  position: absolute;
+  right: 1.5rem;
+}
+/* fin contact section */
+/* footer section */
+#footer {
+  background-color: grey;
+  width: 100%;
+  height: 30vh;
+}
+#top {
+  padding-bottom: 2vh;
+  padding-top: 5vh;
+  display: flex;
+  justify-content: center;
+}
+.toTheTop {
+  width: 10rem;
+  height: 3rem;
+  background-color: white;
+
+  color: black;
+  text-align: center;
+  padding: 1rem;
+}
+.reseauxFooter {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.reseauxFooter i {
+  color: white;
+}
+#footer h6 {
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+}
+/* @media screen and (max-width: 576px) {
+  .myLogoWebsite {
+    display: none;
+  }
+  #aboutDesktop p {
+    display: none;
+  }
+
+  #aboutDesk {
+    display: none;
+  }
+  #map2 {
+    display: none;
+  }
+} */
+
+@media screen and (min-width: 576px) {
+  #menuHeader label {
+    display: none;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  /* modale img portfolio */
+  #portfolioModaleBack {
+    background-color: #000;
+    position: fixed;
+    width: 100wv;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  #portfolioModaleBackClose {
+    color: #fff;
+    font-weight: 900;
+    font-size: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+  /* menu modal css */
+  .modalParent {
+    position: relative;
+  }
+  #modaleMenu {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 30rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    z-index: 3;
+    background-color: #fff;
+    display: none;
+  }
+  #modaleMenu div {
+    width: 24%;
+  }
+  #modaleMenu img {
+    width: 100%;
+  }
+
+  #menuHeader ul {
+    width: fit-content;
+    flex-direction: row;
+
+    top: 0;
+    left: 8vh;
+  }
+  #brand {
+    display: none;
+  }
+
+  /* modal window */
+  #myBtnAbout,
+  #myBtnPorto,
+  #myBtnContact {
+    background-color: #dcdfe8;
+    border: none;
+    float: left;
+    height: 3rem;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    padding-top: 0.6rem;
+    text-decoration: none;
+
+    text-align: left;
+  }
+  #myBtn:hover {
+    background-color: rgb(179, 177, 177);
+    color: black;
+  }
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 60px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  }
+
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+
+    border: 1px solid #888;
+    width: 50%;
+    position: absolute;
+    left: 200px;
+    box-shadow: 5px 5px 5px 1px black;
+  }
+  .modal-content img {
+    width: 20%;
+    padding: 10px;
+  }
+
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  /* fin modal window */
+
+  #menuHeader {
+    display: flex;
+
+    position: fixed;
+    position: relative;
+    z-index: 2;
+  }
+
+  #menuHeader ul {
+    width: 50vh;
+    list-style-type: none;
+    position: absolute;
+    border: none;
+
+    background-color: rgba(red, green, blue, alpha);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+    height: 30vh;
+
+    overflow: hidden;
+    transition: all 0.5s;
+  }
+
+  /* menu resp */
+
+  #box:checked ~ ul {
+    max-height: 26vh;
+  }
+  #box {
+    display: none;
+  }
+  #box:not(:checked) ~ ul {
+    max-height: 0;
+  }
+  /* The navigation menu */
+
+  /* Navigation links */
+  #menuHeader a {
+    float: left;
+    height: 3rem;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    padding-top: 0.6rem;
+    text-decoration: none;
+
+    text-align: left;
+  }
+  #menuHeader ul {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+
+    width: 40vw;
+  }
+
+  /* Add a red background color to navigation links on hover */
+  #menuHeader a:hover {
+    background-color: rgb(179, 177, 177);
+    color: black;
+  }
+
+  #box:not(:checked) ~ ul {
+    max-height: 20vh;
+
+    /* background-color: red; */
+  }
+  #menuHeader li {
+    right: 0;
+    /* padding-top: 1rem; */
+
+    font-size: 0.9rem;
+
+    color: grey;
+  }
+  #menuHeader a {
+    text-decoration: none;
+  }
+  #menuHeader:hover {
+    background-color: none;
+  }
+  #headerText h1 {
+    width: 100%;
+  }
+  .myLogoWebsite {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    letter-spacing: 0.5rem;
+  }
+  .myLogoWebsite {
+    background-color: black;
+  }
+  .myLogoWebsite h1 {
+    color: white;
+  }
+  .myLogo {
+    display: none;
+  }
+  #about p {
+    display: none;
+  }
+  #aboutDesktop {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  #myName {
+    display: flex;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  #barskills {
+    padding-left: 20%;
+    padding-right: 15%;
+  }
+  #middle {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    height: 15vh;
+    flex-direction: row;
+    padding: 0;
+    justify-content: space-between;
+  }
+
+  #pics img {
+    width: 24%;
+    padding: 1rem;
+  }
+  #map img {
+    display: none;
+  }
+
+  .contactMessage {
+    width: 100%;
+  }
+  #contactForm {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    position: relative;
+    top: 30vh;
+    left: 33rem;
+    /* padding-right: 10%; */
+  }
+  .contactEmail {
+    width: 48%;
+  }
+  .contactName {
+    width: 48%;
+  }
+
+  #map2 img {
+    height: 150px;
+    width: 250px;
+    position: absolute;
+    left: 15rem;
+  }
+  .adress {
+    width: 50%;
+    position: absolute;
+    left: 35rem;
+  }
+  #contact {
+    display: flex;
+    flex-direction: column;
+
+    height: 70vh;
+    width: 100%;
+  }
+  #contactForm button {
+    position: absolute;
+    right: 24%;
+    top: 25vh;
+  }
+  #footer {
+    margin-top: 20vh;
+  }
+}
+
+#portfolioModaleBack {
+  background-color: #000;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+#portfolioModaleBack img {
+  width: 80wv;
+}
+
+#portfolioModaleBackClose {
+  color: #fff;
+  font-weight: 900;
+  font-size: 2rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
